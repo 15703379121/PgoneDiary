@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <king.rapper.pgone.pgonediary.util.SampleView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="测试颜色渐变"
+        android:textColor="@color/gray3"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tv_test1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="测试颜色渐变"
+        android:textColor="@color/gray3"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/btn_CustomTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvTime"
+        android:layout_margin="10dp"
+        android:text="时间选择器自定义布局" />
+</LinearLayout>

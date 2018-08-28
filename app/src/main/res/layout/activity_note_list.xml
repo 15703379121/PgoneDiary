@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_layout_title_bar_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/grayd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_new_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round_rectangle_bg_list"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="新建"
+                android:textColor="@color/gray6"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/cb_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb"
+                android:background="@drawable/shape_round_rectangle_bg_list"
+                android:gravity="center"
+                android:minWidth="70dp"
+                android:padding="5dp"
+                android:text="全选"
+                android:textColor="@color/gray6"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round_rectangle_bg_list"
+                android:gravity="center"
+                android:minWidth="70dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="删除"
+                android:textColor="@color/gray6"
+                android:textSize="14sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

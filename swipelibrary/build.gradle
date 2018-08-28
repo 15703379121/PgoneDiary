@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+//    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 28
+    }
+}
+
+dependencies {
+    compile 'com.android.support:recyclerview-v7:28.+'
+    compile 'com.android.support:support-v4:28.+'
+}
+
+//apply plugin: 'android-maven'
+// build a jar with source files
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+artifacts {
+    archives sourcesJar
+}

@@ -1,0 +1,10 @@
+<resources>
+
+
+    <declare-styleable name="PickerView">
+
+        <attr name="isLoop" format="boolean" />
+
+    </declare-styleable>
+
+</resources>

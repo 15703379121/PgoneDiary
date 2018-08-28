@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_layout_title_bar" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayd"
+        android:focusableInTouchMode="true" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_test"
+            android:orientation="vertical">
+
+
+            <!--标题-->
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparentDate"
+                android:hint="标题"
+                android:lines="1"
+                android:maxLength="30"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/AppPrimary"
+                android:textColorHint="@color/gray9"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/grayf5" />
+
+            <!--地点-->
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparentDate"
+                android:hint="地点"
+                android:lines="1"
+                android:maxLength="30"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/AppPrimary"
+                android:textColorHint="@color/gray9"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/grayf5" />
+
+            <!--开始时间-->
+            <LinearLayout
+                android:id="@+id/ll_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_start_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparentDate"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="开始时间"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparentDate"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="请选择开始时间"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/grayf5" />
+
+            <!--结束时间-->
+            <LinearLayout
+                android:id="@+id/ll_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_end_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparentDate"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="结束时间"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparentDate"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="请选择结束时间"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/grayf5" />
+
+            <!--是否开启提醒时间-->
+            <LinearLayout
+                android:id="@+id/ll_alarm_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparentDate"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="闹钟提醒"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_alarm_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparentDate"
+                    android:drawableLeft="@drawable/selector_alarm"
+                    android:drawablePadding="3dp"
+                    android:gravity="right"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="未开启"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/grayf5" />
+
+            <!--是否开启提醒时间-->
+            <LinearLayout
+                android:id="@+id/ll_alarm_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_color_gray_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_alarm_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="闹钟提醒"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:foreground="@drawable/selector_color_gray_white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <EditText
+                        android:id="@+id/et_alarm_open_time"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="1dp"
+                        android:text="5"
+                        android:textColor="@color/AppPrimary"
+                        android:textColorHint="@color/gray9"
+                        android:textSize="15sp" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_alarm_minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="分钟"
+                    android:textColor="@color/AppPrimary"
+                    android:textColorHint="@color/gray9"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/grayf5" />
+            <!--详细信息-->
+            <EditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparentDate"
+                android:hint="详细信息"
+                android:lines="5"
+                android:gravity="top|left"
+                android:maxLength="30"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/AppPrimary"
+                android:textColorHint="@color/gray9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/transparentDate"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLength="30"
+                android:minWidth="300dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="提交"
+                android:textColor="@color/AppPrimary"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
